@@ -1,0 +1,232 @@
+// Microsoft Visual C++ generated resource script.
+//
+#pragma code_page(65001)
+
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#include ""res\\IC.rc2""  // 闈?Microsoft Visual C++ 缂栬緫鐨勮祫婧?\n"
+    "#include ""l.CHS\\afxres.rc""      // 鏍囧噯缁勪欢\r\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""l.CHS\\afxribbon.rc""   // MFC 鍔熻兘鍖哄拰鎺у埗鏉¤祫婧?\n"
+    "#endif\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\IC.ico"
+
+IDI_ICON_BM             ICON                    "D:\\CPP\\IC\\res\\BM2.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_IC_DIALOG DIALOGEX 0, 0, 320, 201
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "服务器信息查询工具"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "服务器信息",IDC_STATIC,6,6,138,78
+    RTEXT           "主机ip:",IDC_STATIC,24,24,33,8
+    RTEXT           "网络延迟:",IDC_STATIC,24,42,33,8
+    GROUPBOX        "快捷操作",IDC_STATIC,156,6,156,78
+    PUSHBUTTON      "刷新信息",IDC_BUTTON1,174,54,50,14
+    PUSHBUTTON      "退出",IDC_BUTTON2,246,54,50,14
+    PUSHBUTTON      "切换服务器",IDC_BUTTON3,174,24,50,14
+    EDITTEXT        IDC_LOG,12,102,294,84,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    GROUPBOX        "日志",IDC_STATIC,6,90,306,102
+    LTEXT           "ms",IDC_STATIC,120,42,11,8
+    CTEXT           "?",IDC_DELAY,63,42,52,8
+    CTEXT           "---.---.---.---",IDC_IPADDR,63,24,67,8
+    RTEXT           "当前账号:",IDC_STATIC,24,62,33,8
+    CTEXT           "---",IDC_USER,63,63,67,8
+    PUSHBUTTON      "清空日志",IDC_BUTTON4,246,24,50,14
+END
+
+IDD_LOGIN_DLG DIALOGEX 0, 0, 206, 155
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "连接服务器"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_IPADDRESS,"SysIPAddress32",WS_TABSTOP,77,22,100,15
+    EDITTEXT        IDC_USER,77,54,100,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PWD,77,86,100,15,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "登入",IDC_DOLOGIN,39,119,50,14
+    PUSHBUTTON      "取消",IDC_DOEXIT,117,119,50,14
+    RTEXT           "服务器地址：",IDC_STATIC,29,24,43,15
+    RTEXT           "管理账户：",IDC_STATIC,36,56,36,15
+    RTEXT           "管理密码：",IDC_STATIC,36,88,36,15
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "IC"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "IC.exe"
+            VALUE "LegalCopyright", "TODO:  (C) <公司名>。  保留所有权利。"
+            VALUE "OriginalFilename", "IC.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_IC_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_LOGIN_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 199
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 148
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_IC_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_LOGIN_DLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#include "res\IC.rc2"  // 闈?Microsoft Visual C++ 缂栬緫鐨勮祫婧?
+#include "l.CHS\afxres.rc"      // 鏍囧噯缁勪欢
+#if !defined(_AFXDLL)
+#include "l.CHS\afxribbon.rc"   // MFC 鍔熻兘鍖哄拰鎺у埗鏉¤祫婧?
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
